@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ayurnxt Logo - Leaf Design -->
+  
+  <!-- Center stem -->
+  <path d="M100 50 L100 150" stroke="#8B6F47" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Top left leaf (light gold) -->
+  <path d="M100 70 Q85 60 75 65 Q70 70 75 80 Q80 85 90 85 Q95 82 100 70 Z" fill="#B8A67D" stroke="#8B6F47" stroke-width="1"/>
+  
+  <!-- Top right leaf (gold) -->
+  <path d="M100 70 Q115 60 125 65 Q130 70 125 80 Q120 85 110 85 Q105 82 100 70 Z" fill="#B8935C" stroke="#8B6F47" stroke-width="1"/>
+  
+  <!-- Middle left leaf (teal) -->
+  <path d="M100 95 Q75 85 60 95 Q50 105 60 120 Q70 130 85 125 Q95 120 100 95 Z" fill="#2F6B5C" stroke="#1F4A3F" stroke-width="1.5"/>
+  
+  <!-- Middle right leaf (teal) -->
+  <path d="M100 95 Q125 85 140 95 Q150 105 140 120 Q130 130 115 125 Q105 120 100 95 Z" fill="#3A7D6E" stroke="#1F4A3F" stroke-width="1.5"/>
+  
+  <!-- Bottom left leaf (dark teal) -->
+  <path d="M100 130 Q85 125 75 135 Q70 145 80 155 Q90 160 95 150 Q98 140 100 130 Z" fill="#1F4A3F" stroke="#1F4A3F" stroke-width="1"/>
+  
+  <!-- Bottom right leaf (brown) -->
+  <path d="M100 130 Q115 125 125 135 Q130 145 120 155 Q110 160 105 150 Q102 140 100 130 Z" fill="#8B6F47" stroke="#5C4A3A" stroke-width="1"/>
+  
+  <!-- Leaf veins for detail -->
+  <path d="M75 80 L85 85" stroke="#8B6F47" stroke-width="0.5" opacity="0.5"/>
+  <path d="M125 80 L115 85" stroke="#8B6F47" stroke-width="0.5" opacity="0.5"/>
+  <path d="M65 110 L85 120" stroke="#1F4A3F" stroke-width="0.8" opacity="0.4"/>
+  <path d="M135 110 L115 120" stroke="#1F4A3F" stroke-width="0.8" opacity="0.4"/>
+</svg>

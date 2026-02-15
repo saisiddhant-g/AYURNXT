@@ -1,0 +1,688 @@
+/* Additional custom styles for Ayurnxt */
+/* Protocol-Driven Visual Expression */
+/* Stitch-inspired Design System */
+
+/* Root color variables - Tech-Medical Premium System */
+:root {
+  /* Cool neutral base - medical grade */
+  --bg-primary: #F2F5F4;
+  --bg-secondary: #FFFFFF;
+  --bg-card: #FDFCFA;
+  
+  /* Controlled green system */
+  --green-primary: #2F5D4F;        /* Primary buttons - solid, confident */
+  --green-heading: #214E45;        /* Headings - deeper, authoritative */
+  --green-secondary: #3A7D6E;
+  --green-light: #E8F3F0;
+  
+  /* Accent gold - subtle use only */
+  --gold-accent: #C4A45F;
+  
+  /* Neutral grey system - no warmth */
+  --text-primary: #2C3E3B;
+  --text-secondary: #5F6F6B;       /* Body text - neutral grey */
+  --text-muted: #9BA8A4;
+  
+  /* Precision borders and shadows */
+  --border-subtle: rgba(0, 0, 0, 0.04);
+  --shadow-medical: 0 20px 40px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(180deg, #F2F5F4 0%, #EDF2F1 100%);
+}
+
+body {
+  background: linear-gradient(180deg, #F2F5F4 0%, #EDF2F1 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  color: var(--text-secondary);
+}
+
+/* Card styling - Medical-grade precision */
+.stitch-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  box-shadow: var(--shadow-medical);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stitch-card:hover {
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.10);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Button styling - Solid, confident, medical-grade */
+.stitch-button-primary {
+  background: var(--green-primary);
+  color: white;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  box-shadow: var(--shadow-medical);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.01em;
+}
+
+.stitch-button-primary:hover {
+  background: var(--green-secondary);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.10);
+  transform: translateY(-1px);
+}
+
+.stitch-button-secondary {
+  background: var(--bg-secondary);
+  color: var(--green-primary);
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-medical);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.01em;
+}
+
+.stitch-button-secondary:hover {
+  background: var(--green-light);
+  border-color: var(--green-primary);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.10);
+}
+
+/* Badge styling - Controlled, clinical */
+.stitch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.stitch-badge-success {
+  background: var(--green-light);
+  color: var(--green-heading);
+  border: 1px solid var(--border-subtle);
+}
+
+.stitch-badge-warning {
+  background: #FFF8F0;
+  color: #8B6F47;
+  border: 1px solid var(--border-subtle);
+}
+
+.stitch-badge-gold {
+  background: rgba(196, 164, 95, 0.08);
+  color: var(--gold-accent);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Floating animation for logo */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Protocol State Transitions - Guided Procedure Feel */
+@keyframes protocolFadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px) scale(0.98);
+    filter: blur(4px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes protocolSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Breathing Animation - Synced to Therapy */
+@keyframes breathe {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes breathePulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.6);
+  }
+}
+
+/* Session Lock Visual - Intentional, Not Restrictive */
+@keyframes lockGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+}
+
+/* Progress Ring - Cannot Be Rushed */
+@keyframes progressSweep {
+  from {
+    stroke-dashoffset: 628;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Earned Achievement Feel */
+@keyframes earnedGlow {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: brightness(1.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+/* Safety Interruption - Supportive Blur */
+@keyframes safetyBlur {
+  from {
+    backdrop-filter: blur(0px);
+    background: rgba(255, 255, 255, 0);
+  }
+  to {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
+@keyframes safetyFocus {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Compliance Streak - Encouraging Not Gamified */
+@keyframes streakPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Red Flag Warning - Responsible Not Scary */
+@keyframes responsibleAlert {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Deliberate Button Press */
+@keyframes deliberatePress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Protocol Classes */
+.protocol-transition {
+  animation: protocolFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.protocol-slide {
+  animation: protocolSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.breathing-glow {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+.breathing-pulse {
+  animation: breathePulse 4s ease-in-out infinite;
+}
+
+.session-locked {
+  animation: lockGlow 2s ease-in-out infinite;
+}
+
+.earned-achievement {
+  animation: earnedGlow 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.safety-overlay {
+  animation: safetyBlur 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.safety-content {
+  animation: safetyFocus 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+  opacity: 0;
+}
+
+.streak-indicator {
+  animation: streakPulse 2s ease-in-out infinite;
+}
+
+.responsible-warning {
+  animation: responsibleAlert 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.deliberate-action:active {
+  animation: deliberatePress 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Shimmer effect for earned achievements */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* State transition overlay */
+@keyframes stateTransition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.state-transition-overlay {
+  animation: stateTransition 0.8s ease-in-out;
+}
+
+/* Custom range slider styling */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+/* Smooth focus transitions */
+input:focus,
+textarea:focus,
+select:focus {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Fade in animation for dynamic content */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+img[src=""] {
+  opacity: 0;
+}
+
+/* Premium button hover effects */
+button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Prevent text selection on buttons */
+button {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Smooth checkbox toggle */
+input[type="checkbox"] {
+  transition: all 0.3s ease;
+}
+
+/* Custom selection color - logo color theme */
+::selection {
+  background-color: rgba(47, 107, 92, 0.2);
+  color: #1F4A3F;
+}
+
+::-moz-selection {
+  background-color: rgba(47, 107, 92, 0.2);
+  color: #1F4A3F;
+}
+
+/* Smooth page transitions */
+.page-transition {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Accessibility: Focus visible for keyboard navigation - logo theme */
+*:focus-visible {
+  outline: 2px solid #2F6B5C;
+  outline-offset: 2px;
+}
+
+/* Hide focus outline for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth hover scale */
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Premium shadow transitions */
+.shadow-transition {
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================ */
+/* DARK MODE STYLES */
+/* ============================================ */
+
+.dark {
+  /* Dark mode color variables */
+  --bg-primary: #1E2524;
+  --bg-secondary: #263332;
+  --bg-card: #2A3534;
+  
+  /* Dark mode green system - lighter for contrast */
+  --green-primary: #4A9D8A;
+  --green-heading: #5AB09D;
+  --green-secondary: #3A8D7A;
+  --green-light: #2F4A44;
+  
+  /* Dark mode accent */
+  --gold-accent: #D4B46F;
+  
+  /* Dark mode text */
+  --text-primary: #E5ECEB;
+  --text-secondary: #B8C5C1;
+  --text-muted: #7A8A86;
+  
+  /* Dark mode borders and shadows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --shadow-medical: 0 20px 40px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode background gradients */
+.dark html,
+.dark body {
+  background: linear-gradient(180deg, #1E2524 0%, #1A2120 100%);
+}
+
+/* Dark mode card adjustments */
+.dark .stitch-card {
+  background: var(--bg-card);
+  border-color: var(--border-subtle);
+}
+
+.dark .stitch-card:hover {
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Dark mode button adjustments */
+.dark .stitch-button-primary {
+  background: var(--green-primary);
+  color: white;
+}
+
+.dark .stitch-button-primary:hover {
+  background: var(--green-secondary);
+}
+
+.dark .stitch-button-secondary {
+  background: var(--bg-secondary);
+  color: var(--green-heading);
+  border-color: var(--border-subtle);
+}
+
+.dark .stitch-button-secondary:hover {
+  background: var(--green-light);
+  border-color: var(--green-primary);
+}
+
+/* Dark mode badge adjustments */
+.dark .stitch-badge-success {
+  background: var(--green-light);
+  color: var(--green-heading);
+}
+
+.dark .stitch-badge-warning {
+  background: rgba(139, 111, 71, 0.15);
+  color: #D4B46F;
+}
+
+.dark .stitch-badge-gold {
+  background: rgba(212, 180, 111, 0.12);
+  color: var(--gold-accent);
+}
+
+/* Dark mode input fields */
+.dark input,
+.dark textarea,
+.dark select {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-subtle);
+}
+
+.dark input:disabled,
+.dark textarea:disabled,
+.dark select:disabled {
+  background: var(--bg-primary);
+  color: var(--text-muted);
+}
+
+/* Dark mode selection */
+.dark ::selection {
+  background-color: rgba(74, 157, 138, 0.3);
+  color: #E5ECEB;
+}
+
+.dark ::-moz-selection {
+  background-color: rgba(74, 157, 138, 0.3);
+  color: #E5ECEB;
+}
+
+/* Dark mode focus visible */
+.dark *:focus-visible {
+  outline: 2px solid #5AB09D;
+  outline-offset: 2px;
+}
+
+/* Dark mode scrollbar (webkit browsers) */
+.dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--bg-card);
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--green-light);
+}
+
+/* Dark mode header styling */
+.dark nav {
+  background: rgba(18, 30, 27, 0.95) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark nav span {
+  color: #FFFFFF !important;
+}
+
+/* Dark mode password toggle icon */
+.dark button[title*="password"] {
+  color: #FFFFFF !important;
+}
+
+/* Smooth dark mode transition */
+html,
+body,
+.stitch-card,
+.stitch-button-primary,
+.stitch-button-secondary,
+.stitch-badge,
+input,
+textarea,
+select,
+nav,
+nav span {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}

@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "purpose": "System-defined protocol defaults for condition-specific therapy timing",
+    "disclaimer": "These are demonstration protocol defaults, NOT medical advice. Consult a healthcare professional for personalized treatment guidance.",
+    "basis": "Commonly available practitioner guidance for topical oil applications"
+  },
+  "conditions": {
+    "INTERNAL_PAIN": {
+      "displayName": "Internal Pain",
+      "description": "Deep musculoskeletal pain perceived internally",
+      "examples": [
+        "Joint pain (knee, shoulder, elbow, hip)",
+        "Back pain (lower back, upper back)",
+        "Muscle ache (deep tissue discomfort)",
+        "Chronic stiffness",
+        "Arthralgia (joint discomfort)"
+      ],
+      "sessionDuration": "30–45 minutes",
+      "maxSessionsPerDay": 1,
+      "cooldownHours": 10,
+      "demoProtocolText": "System-defined protocol default based on commonly available practitioner guidance for topical oil applications. Traditional Ayurvedic thailam-based applications often recommend gentle application followed by a period of 30–45 minutes for deep musculoskeletal discomfort. This is a demonstration protocol and not medical advice. Consult a healthcare professional for personalized treatment guidance.",
+      "skinRequirements": [
+        "Intact external skin only",
+        "No open wounds or breaks in skin",
+        "Clean, dry application area"
+      ],
+      "isSupported": true
+    },
+    "EXTERNAL_PAIN": {
+      "displayName": "External Pain",
+      "description": "Surface-level discomfort on intact skin",
+      "examples": [
+        "Muscle soreness (post-activity)",
+        "Sprain discomfort (closed skin)",
+        "Localized tenderness",
+        "Mild strain",
+        "Post-exercise muscle fatigue"
+      ],
+      "sessionDuration": "20–30 minutes",
+      "maxSessionsPerDay": 1,
+      "cooldownHours": 8,
+      "demoProtocolText": "System-defined protocol default based on commonly available practitioner guidance. Topical oil applications for surface-level discomfort typically recommend 20–30 minutes of application time. This timing is derived from traditional practices where oils like Murivenna are applied and left on the skin for approximately 30 minutes. This is a demonstration protocol and not medical advice. Consult a healthcare professional for personalized treatment guidance.",
+      "skinRequirements": [
+        "Intact external skin only",
+        "No open wounds or active bleeding",
+        "Clean application area"
+      ],
+      "isSupported": true
+    },
+    "MINOR_SUPERFICIAL_WOUNDS": {
+      "displayName": "Minor Superficial Wounds",
+      "description": "Shallow abrasions, non-bleeding scratches, superficial burns (healed surface only)",
+      "examples": [
+        "Shallow abrasions (non-bleeding)",
+        "Minor scratches (surface level, closed)",
+        "Superficial burns (first-degree, healed)",
+        "Paper cuts (closed, no bleeding)",
+        "Minor skin irritation (healed surface)"
+      ],
+      "sessionDuration": "15–20 minutes",
+      "maxSessionsPerDay": 1,
+      "cooldownHours": 12,
+      "demoProtocolText": "System-defined protocol default for minor superficial wounds with healed surface only. Application time is limited to 15–20 minutes to minimize skin exposure. This protocol applies ONLY to non-bleeding, closed superficial wounds. This is a demonstration protocol and not medical advice. Consult a healthcare professional for wound care guidance.",
+      "skinRequirements": [
+        "Wound surface must be closed and non-bleeding",
+        "No active discharge or weeping",
+        "No signs of infection (redness, swelling, warmth)",
+        "Superficial layer only (no deep tissue involvement)",
+        "Clean, dry wound area"
+      ],
+      "contraindicationWarning": "Do not apply to open, bleeding, or infected wounds. Discontinue immediately if irritation or discomfort occurs.",
+      "isSupported": true
+    },
+    "NOT_SUPPORTED": {
+      "displayName": "Not Supported",
+      "description": "Conditions not appropriate for external plaster therapy",
+      "examples": [
+        "Open wounds (actively bleeding)",
+        "Infected wounds (pus, discharge, fever)",
+        "Deep lacerations",
+        "Puncture wounds",
+        "Surgical wounds (fresh)",
+        "Burns (second-degree or higher)",
+        "Ulcers (open)",
+        "Skin with active infection"
+      ],
+      "sessionDuration": "N/A",
+      "maxSessionsPerDay": 0,
+      "cooldownHours": 0,
+      "demoProtocolText": "This condition type is not supported by the Ayurnxt external plaster therapy system.",
+      "safetyNotice": "⚠️ SAFETY NOTICE\n\nConsult a healthcare professional; external plaster therapy is not appropriate for this condition.\n\nThis system is designed for external application on intact or appropriately healed skin only. Open wounds, bleeding wounds, and infected wounds require professional medical evaluation and treatment.\n\nPlease seek immediate medical attention for:\n• Open or actively bleeding wounds\n• Signs of infection (redness, swelling, warmth, discharge, fever)\n• Deep lacerations or puncture wounds\n• Burns beyond superficial first-degree\n• Any wound requiring professional wound care\n\nThis is not a substitute for medical treatment.",
+      "isSupported": false
+    }
+  },
+  "timingSummary": {
+    "INTERNAL_PAIN": {
+      "duration": "30–45 min",
+      "maxPerDay": 1,
+      "cooldown": "10 hrs"
+    },
+    "EXTERNAL_PAIN": {
+      "duration": "20–30 min",
+      "maxPerDay": 1,
+      "cooldown": "8 hrs"
+    },
+    "MINOR_SUPERFICIAL_WOUNDS": {
+      "duration": "15–20 min",
+      "maxPerDay": 1,
+      "cooldown": "12 hrs"
+    },
+    "NOT_SUPPORTED": {
+      "duration": "N/A",
+      "maxPerDay": 0,
+      "cooldown": "N/A"
+    }
+  },
+  "references": {
+    "topicalOilApplications": "Nutraceutical topical oil applications often recommend gentle application then leaving on for approximately 20–30 minutes for pain relief",
+    "traditionalPractices": "Traditional topical oil treatments like Murivenna suggest applying oil and leaving it on the skin for a period such as approximately 30 minutes"
+  }
+}

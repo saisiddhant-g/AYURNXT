@@ -1,0 +1,7 @@
+{
+  "name": "Ayurnxt – Smart Ayurvedic Therapy System",
+  "description": "A premium healthcare demo showcasing intelligent guidance for herbal plaster therapy. Features glassmorphism design, smooth animations, clinical responsibility, and complete patient/provider workflows. Production-quality UI optimized for judges and evaluators.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
